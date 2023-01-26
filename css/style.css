@@ -3,6 +3,7 @@
 	--bg: #010101;
 }
 
+
 *	{
 	margin:	0;
 	padding: 0;
@@ -147,7 +148,6 @@ body	{
 	border-radius: 0.5rem;
 	box-shadow: 1px 1px 3px rgba(1, 1, 3, .5);
 }
-
 
 /* About Section */
 .about, 
@@ -308,14 +308,12 @@ body	{
 
 .comment .row .member-card h4 {
 	color: var(--primary);
-	padding: 0 1rem 0.5rem;
 }
 
 .comment .row .member-card p {
 	color: var(--primary);
 	font-weight: 400;
 	text-align: left;
-	padding: 0 1rem 0.5rem;
 }
 
 .comment .row .member-card a {
@@ -323,8 +321,76 @@ body	{
 	color: #fff;
 	font-weight: 400;
 	text-align: left;
-	padding: 0 1rem 0.5rem;
 }
+
+
+/* membership section */
+.membership {
+	position: relative;
+	background-color: #fff;
+}
+
+.membership .pattern {
+	content: "";
+	width: 100%;
+	height: 42%;
+	bottom: 0;
+	position: absolute;
+	background-color: rgba(255,255,255,0);
+	opacity: 1;
+	background-image: radial-gradient(#b6895b 1.4000000000000001px, rgba(255,255,255,0) 1.4000000000000001px);
+	background-size: 10px 10px;
+}
+
+
+.membership .row {
+	display: flex;
+	margin-top: 2rem;
+	flex-wrap: wrap;
+	padding-bottom: 0;
+	position: relative;
+}
+
+.membership .row .content {
+	color: var(--bg);
+	flex: 1 1 30rem;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+.membership .row .content h2 {
+	font-size: 3em;
+	font-weight: 700;
+	color: var(--primary);
+	text-shadow: 1px 1px 1px rgba(1, 1, 3, 0.8);
+}
+
+.membership .row .member-img {
+	flex: 1 1 30rem;
+	text-align: right;
+	padding: 2rem 3rem;
+	margin-bottom: 0;
+}
+
+.membership .row .member-img img {
+	box-shadow: -15px 15px 0 -5px var(--bg);
+}
+
+.membership .row .content .member-cta {
+	margin-top: 1rem;
+	display: inline-block;
+	padding: 0.7rem 2rem;
+	background-color: var(--bg);
+	color: var(--primary);
+	font-weight: 700;
+	border-radius: 0.5rem;
+}
+
+
+
+
+
 
 
 
@@ -333,7 +399,6 @@ footer {
 	background-color: var(--primary);
 	text-align: center;
 	padding: 1rem 0 3rem;
-	margin-top: 3rem;
 }
 
 footer .socials {
