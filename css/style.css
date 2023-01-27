@@ -333,13 +333,13 @@ body	{
 .membership .pattern {
 	content: "";
 	width: 100%;
-	height: 42%;
+	height: 40%;
 	bottom: 0;
 	position: absolute;
 	background-color: rgba(255,255,255,0);
 	opacity: 1;
 	background-image: radial-gradient(#b6895b 1.4000000000000001px, rgba(255,255,255,0) 1.4000000000000001px);
-	background-size: 10px 10px;
+	background-size: 5px 5px;
 }
 
 
@@ -380,12 +380,35 @@ body	{
 .membership .row .content .member-cta {
 	margin-top: 1rem;
 	display: inline-block;
-	padding: 0.7rem 2rem;
-	background-color: var(--bg);
+	width: 10rem;
+	height: 3.5rem;
+	background-color: #fff;
 	color: var(--primary);
 	font-weight: 700;
 	border-radius: 0.5rem;
+	position: relative;
 }
+
+.membership .row .content .member-cta::before {
+	content: "Bergabung";
+	width: 100%;
+	height: 100%;
+	color: var(--primary);
+	background-color: var(--bg);
+	position: absolute;
+	border-radius: 0.5rem;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+}
+
+.membership .row .content .member-cta:hover::before {
+	transform: translate(0.4rem, -0.4rem);
+}
+
 
 
 
@@ -532,6 +555,19 @@ footer .credits a {
 	.comment .row .member-card p {
 		font-size: 1.3rem;
 		text-align: center;
+	}
+
+	.membership .row {
+		justify-content: center;
+		padding: 3rem 0;
+	}
+
+	.membership .row .member-img {
+		text-align: center;
+	}
+
+	.membership .row .content .member-cta {
+		background-color: var(--primary);
 	}
 
 }
